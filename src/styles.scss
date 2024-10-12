@@ -4,15 +4,28 @@ $fontFamilyMain: "Montserrat", sans-serif;
 $fontFamilySec: "Poppins", sans-serif;
 $fontFamilyAlt: "Cairo", sans-serif;
 
-$colorMain: #ff3d57;
-$colorAlt: #00d743;
-$colorFont: #434343;
-$colorYellow: #ffe400;
-$colorYellowSec: #ffca00;
+// $colorMain: #ff3d57;
+// $colorAlt: #00d743;
+// $colorFont: #434343;
+// $colorYellow: #ffe400;
+// $colorYellowSec: #ffca00;
 // $colorHover: #0a21c0;
 $colorHover: #14a76c;
-
 $colorEffect: #00d743;
+
+// ali
+$colorMain: #fd2a53;
+$colorMainAlt: #fd384f;
+$colorNavBg: #191919;
+$colorNavBgAlt: #535353;
+$colorBtnBg: #191919;
+$colorPageBg: #ffffff;
+$colorCardBg: #eaecf9;
+$colorCardBgAlt: #ffdaef;
+$colorFotrBg: #e8e8e8;
+$colorTxt: #ffffff;
+$colorTxtAlt: #757575;
+$colorTxtAltSec: #999999;
 
 $transisionMain: 0.3s;
 
@@ -33,7 +46,7 @@ html {
 }
 body {
   font-family: $fontFamilyMain;
-  color: $colorFont;
+  color: $colorTxt;
   margin: 0;
 }
 ul {

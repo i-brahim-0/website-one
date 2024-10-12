@@ -1,13 +1,53 @@
-<div class="navbar" id="navbar">
-  <div class="container">
-    <a href="" class="logo">Polaris</a>
-    <div class="search">
-      <input type="search" />
+<div class="flex">
+  <div class="navbar" id="navbar">
+    <div class="container">
+      <div class="logo-box">
+        <a href="" class="logo">Polaris</a>
+      </div>
+      <div class="header">
+        <div class="search-box">
+          <input type="search" placeholder="search" />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="header-items">
+          <div class="lang-box">
+            <span><i class="fa-solid"></i></span>
+            <div class="lan">EN</div>
+          </div>
+          <div class="acount-box">
+            <span><i class="fas fa-user"></i></span>
+            <div class="account">
+              <span>Welcome</span>
+              <i class="fa-solid"></i>
+            </div>
+          </div>
+          <div class="cart-box">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <div class="lan">Cart</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="nav-list">
+  </div>
+  <!-- Nav Down -->
+  <div class="navbar-down" id="navbar">
+    <div class="container container-dwn">
+      <div class="all-category">
+        <i class="fa-solid fa-bars"></i>
+        <span>All Categories</span>
+      </div>
       <ul class="main-nav">
+        <li><a class="superDels" routerLink="superDeals">SuperDeals</a></li>
         <li><a routerLink="home">Home</a></li>
-        <li><a routerLink="#">Categoris</a></li>
+        <div class="menu">
+          <li>
+            <a routerLink="#">Categoris</a>
+          </li>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
         <li><a routerLink="#">Contact</a></li>
         <li><a routerLink="#">About</a></li>
       </ul>
