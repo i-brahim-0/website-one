@@ -1,10 +1,11 @@
 @use "../../styles.scss" as *;
 
 $heightNavbar: 76px;
+$colorNavComp: #ffffff;
 
 .flex {
   box-shadow: 0 0 10px #bbb;
-
+  color: $colorNavComp;
   .navbar {
     background-color: $colorNavBg;
     position: relative;
@@ -24,6 +25,7 @@ $heightNavbar: 76px;
           height: $heightNavbar;
           display: flex;
           align-items: center;
+          padding-left: 10px;
         }
       }
       .header {
@@ -47,9 +49,9 @@ $heightNavbar: 76px;
           button {
             border: none;
             height: 30px;
-            width: 80px;
+            width: 20%;
             background-color: $colorMain;
-            color: $colorTxt;
+            color: $colorNavComp;
             border-radius: 20px;
             position: absolute;
             top: 5px;
@@ -63,7 +65,7 @@ $heightNavbar: 76px;
           div {
             display: flex;
             position: relative;
-            color: $colorTxt;
+            color: $colorNavComp;
             padding: 5px;
             cursor: pointer;
             overflow: hidden;
@@ -109,6 +111,11 @@ $heightNavbar: 76px;
         }
       }
     }
+    @media (max-width: 767px) {
+      .container {
+        display: block;
+      }
+    }
   }
 
   // Nav Down
@@ -120,7 +127,7 @@ $heightNavbar: 76px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
       .all-category {
         position: relative;
         background-color: $colorNavBgAlt;
@@ -159,7 +166,7 @@ $heightNavbar: 76px;
           align-items: center;
           height: 60px;
           position: relative;
-          color: $colorTxt;
+          color: $colorNavComp;
           padding: 0 20px;
           overflow: hidden;
 
@@ -198,6 +205,7 @@ $heightNavbar: 76px;
     @media (max-width: 767px) {
       .container-dwn {
         height: 50px;
+        display: block;
         .all-category {
           width: 100%;
         }
