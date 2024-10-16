@@ -1,10 +1,12 @@
 @use "../../styles.scss" as *;
 
-$heightNavbar: 76px;
+$heightNavbar: 72px;
 $colorNavComp: #ffffff;
 
 .flex {
   // box-shadow: 0 0 10px #bbb;
+  position: sticky;
+  top: 0;
   color: $colorNavComp;
   .navbar {
     background-color: $colorNavBg;
